@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(220, 217, 217);
+}
+
+.countiner {
+  margin: auto;
+  width: 80%;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  list-style: none;
+}
+.Todo-list {
+  padding-top: 20px;
+}
+
+.Todo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  width: 40%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.Todo .todo-title {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  color: blue;
+}
+.Todo .formTask {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  padding-left: 12px;
+}
+
+.formTask input {
+  padding: 0 10px;
+  width: 80%;
+}
+
+.formTask button {
+  border: 1px solid black;
+  padding: 5px 20px;
+  align-self: center;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: greenyellow;
+}
+
+.TasksList {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+}
+
+.TasksList .task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: rgb(196, 193, 193);
+}
+.success-checked {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: green;
+}
+li .checkbox {
+  width: 15px;
+  height: 20px;
+}
+
+.task .task-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.line {
+  color: white;
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 599px) {
+   .Todo{
+    width: 100%;
+    padding: 20px;
+   }
+
+   .Todo .formTask{
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+    align-items: center;
+   }
+   .formTask input{
+    width: 100%;
+    padding: 13px;
+   }
+}
+@media screen and (min-width: 600px) and (max-width: 954px) {
+    .Todo{
+        width: 90%;
+        padding: 20px;
+       }
+}
